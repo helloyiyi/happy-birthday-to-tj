@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*img {
+  max-width: 100%;
+}
+.birth {
+  display: inline-grid;
+
+  max-width: 500px;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 3px;
+
+  grid-template-areas:
+    "top1 top1 top1"
+    "top2 top2 top2"
+    "sm1 sm1 md1"
+    "sm2 sm2 md1"
+    "md2 md2 md2"
+    "md3 sm3 sm3"
+    "md3 sm4 sm4"
+    "btm btm btm";
+}
+.birth > .top1 {
+  grid-area: top1;
+}
+.birth > .top2 {
+  grid-area: top2;
+  background: rgba(253, 198, 207, 0.7);
+}
+
+.birth > .small1 {
+  color: rgba(255, 215, 0, 1);
+  grid-area: sm1;
+  background: rgba(253, 198, 207, 0.7);
+  font-size: 16px;
+}
+.birth > .small2 {
+  grid-area: sm2;
+  background: rgba(253, 198, 207, 0.7);
+}
+
+.birth > .small3 {
+  grid-area: sm3;
+  background: rgba(253, 198, 207, 0.7);
+}
+
+.birth > .small4 {
+  grid-area: sm4;
+  background: rgba(253, 198, 207, 0.7);
+}
+
+.birth > .middle1 {
+  grid-area: md1;
+  background: rgba(253, 198, 207, 0.7);
+}
+
+.birth > .middle2 {
+  color: rgba(255, 215, 0, 1);
+  grid-area: md2;
+  font-size: 20px;
+  background: rgba(255, 192, 203, 0.7);
+}
+.birth > .middle3 {
+  grid-area: md3;
+}
+.birth > .bottom {
+  grid-area: btm;
+  color: purple;
+  background: rgba(253, 198, 207, 0.7);
+}
+.birth > .top1 {
+  background: rgba(255, 192, 203, 0.7);
+  min-width: auto;
+  margin-top: 5px;
+  color: rgba(255, 215, 0, 1);
+  font-size: 20px;
+}
+#heart {
+  display: inline-block;
+  margin-top: 120px;
+  margin-left: 40px;
+  position: relative;
+  animation: 0.5s heart infinite alternate-reverse;
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+#heart > .bottom {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: pink;
+}
+#heart > .left {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg) translateX(31px);
+  border-radius: 50% 0 0 50%;
+  background: pink;
+}
+#heart > .right {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  transform: rotate(45deg) translateY(31px);
+  border-radius: 50% 50% 0 0;
+  background: pink;
+}
+#jing {
+  position: relative;
+  display: inline-block;
+  transition: all 1s;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#jing:hover {
+  transform: translate(1000px, 1000px);
+}
+#jing2 {
+  color: pink;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+.sandeli1 {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: grey;
+}
+.sandeli2 {
+  margin-top: 20px;
+}
+.sandeli3 {
+  margin-top: 250px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: grey;
+}
