@@ -155,3 +155,30 @@
   font-size: 14px;
   color: grey;
 }
+.denglijun1 {
+  color: pink;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.denglijun2 {
+  color: grey;
+  margin-top: 20px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+
+.denglijun3 {
+  color: grey;
+  margin-top: 100px;
+  margin-left: 10px;
+  line-height: 30px;
+}
+.denglijun4 {
+  color: pink;
+  margin-top: 100px;
+  margin-left: 10px;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
